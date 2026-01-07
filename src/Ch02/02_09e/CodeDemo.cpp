@@ -11,7 +11,7 @@ struct game_character{
     std::string name;
     int level;
     character_role role;
-};
+}; //members default to public in struct, but private in classes
 
 int main(){
     game_character buddy;

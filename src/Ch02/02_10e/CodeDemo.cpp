@@ -11,8 +11,8 @@ int main(){
     uint32_t player_x;
 
     target_x = -123.45;
-    sprite_x = target_x;
-    player_x = sprite_x;
+    sprite_x = target_x; //when you assign float/double to int var gets truncated (implicit casting), expect -123
+    player_x = sprite_x; // two's compliment as was assigned unsigned 32bit int
 
     std::cout << "Target X (float): " << target_x << std::endl;
     std::cout << "Sprite X (int32_t): " << sprite_x << std::endl;
