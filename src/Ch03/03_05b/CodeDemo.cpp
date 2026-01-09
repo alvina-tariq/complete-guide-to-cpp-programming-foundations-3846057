@@ -11,15 +11,15 @@ int main(){
     std::cout << "Initial Ammo: " << ammo << std::endl;
     std::cout << "Initial Zombies Incoming: " << incoming_zombies << std::endl;
 
-    // Addition assignment
+    // Addition assignment -> y += x
 
-    // Subtraction assignment
+    // Subtraction assignment -> y -= x
 
-    // Multiplication assignment
+    // Multiplication assignment -> y *= x
 
-    // Division assignment
+    // Division assignment -> y /= x
 
-    // Remainder assignment
+    // Remainder assignment -> y %= x
 
     std::cout << std::endl << std::endl;
     return 0;
