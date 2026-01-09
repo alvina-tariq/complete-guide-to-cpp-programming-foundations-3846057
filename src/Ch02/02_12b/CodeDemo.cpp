@@ -3,8 +3,8 @@
 // Type Inference with auto, by Eduardo Corpeño 
 
 #include <iostream>
-#include <typeinfo>
-
+#include <typeinfo> //for the typeid operator, name of type accessed by .name() member func.
+/* auto for type inference, so compiler decides - but need to initialise at declaration! */
 int main(){
     auto score;
     auto points;

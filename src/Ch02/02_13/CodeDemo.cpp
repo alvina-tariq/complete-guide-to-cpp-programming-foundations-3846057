@@ -7,9 +7,9 @@
 
 int add_int(float a, double b, long double c){
     int result = 0;
-
-    // Write your code here
-    
+//my code:
+    int result = ((int)a + (int)b + (int)c);
+    //end
     return result;
 }
 

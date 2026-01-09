@@ -11,12 +11,12 @@ enum class menu_section {background, music, sound, controls, texture};
 
 int main(){
     int sound = 8;
-    asset_type asset_value; //shows 8, because sound is another local variable in main's scope
+    asset_type asset_value; 
 //^asset_type instead of type int so that (int) casting isn't required in the next line
     asset_value = asset_type::sound; //asset_type:: added to sound
 
     std::cout << "asset_value = " << (int) asset_value << std::endl;
-
+//asset_value cast here so tht thr << operator can work
     std::cout << std::endl << std::endl;
     return 0;
 }
