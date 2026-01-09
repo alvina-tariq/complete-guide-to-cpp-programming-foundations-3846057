@@ -4,21 +4,21 @@
 
 #include <iostream>
 #include <string>
-#include <chrono>
+#include <chrono> //classes to keep track of time
 
 // Type aliases for chrono classes
 using Clock = std::chrono::system_clock;
-using TimePoint = std::chrono::time_point<Clock>;
+using TimePoint = std::chrono::time_point<Clock>; //using templates
 using Duration = std::chrono::duration<double>;
 
 int main(){
-    TimePoint start, end;
+    TimePoint start, end; //declare 2 objs of timept class
     Duration elapsed_seconds;
     std::string input;
 
-    start = Clock::now();
-
-    std::cout << "Type 'start' as quickly as you can and hit ENTER: " << std::flush;
+    start = Clock::now(); //assign current time to start obj
+// use :: instead of . bc static member function, shared throughout the class
+    std::cout << "Type 'start' as quickly as you can and hit ENTER: " << std::flush; //flush makes message visible whilst pausing exec. till user input below
     std::cin >> input;
 
     end = Clock::now();

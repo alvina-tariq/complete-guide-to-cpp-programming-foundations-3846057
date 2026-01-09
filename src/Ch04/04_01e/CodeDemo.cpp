@@ -5,11 +5,13 @@
 #include <iostream>
 
 //#define LEVEL_COUNT 4
+//^ optional macro
 
 int main(){
-    const size_t LEVEL_COUNT = 4;
+    const size_t LEVEL_COUNT = 4; //go for const instead, size_t used for sizes instead of int
     int enemies[LEVEL_COUNT];
-    float levelDifficulty[] = {1.0, 3.5, 6.0, 10.5};
+    float levelDifficulty[] = {1.0, 3.5, 6.0, 10.5}; 
+    /* always specify type, auto doesn't work for arrays :( */
 
     enemies[0] = 10;
     enemies[1] = 15;
